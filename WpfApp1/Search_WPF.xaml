@@ -1,0 +1,19 @@
+﻿<Window x:Class="EBook_Reader.Search_WPF"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EBook_Reader"
+        mc:Ignorable="d"
+        Title="电子阅读器" Height="493.069" Width="850.495">
+    <Grid Background="#FFD7D7D2">
+        <Label Content="书名(关键词)：" HorizontalAlignment="Left" Margin="33,53,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="18" Width="161"/>
+        <TextBox Name="BNameKw" HorizontalAlignment="Left" Height="30" Margin="156,53,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="165" FontSize="18" FontFamily="Arial"/>
+        <Label Content="作者：" HorizontalAlignment="Left" Margin="365,53,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="18" Width="59"/>
+        <TextBox Name="Author" HorizontalAlignment="Left" Height="30" Margin="424,53,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="165" FontSize="18" FontFamily="Arial"/>
+        <Button Name="SearchBtn" Content="搜索" HorizontalAlignment="Left" Margin="683,53,0,0" VerticalAlignment="Top" Width="78" Height="30" FontSize="18" Click ="SearchBtn_Click"  />
+        <Label Content="查询到书籍：" HorizontalAlignment="Left" Margin="33,123,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="18"/>
+        <ListBox Name ="Sch_Lbox"  HorizontalAlignment="Left" Height="284" Margin="156,123,0,0" VerticalAlignment="Top" Width="569" FontSize="18" Background="#FFC9D4CA" MouseDoubleClick="Sch_Lbox_MouseDoubleClick"/>
+
+    </Grid>
+</Window>
